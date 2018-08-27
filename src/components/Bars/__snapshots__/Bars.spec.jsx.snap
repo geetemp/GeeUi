@@ -1,0 +1,2092 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bars [common] example testing should match snapshot(s) for basic 1`] = `
+<g
+  className="lucid-Bars"
+>
+  <g
+    key="0"
+  >
+    <Bar
+      color="color-chart-0"
+      height={20}
+      key="0"
+      width={38}
+      x={1}
+      y={380}
+    />
+    <Bar
+      color="color-chart-1"
+      height={40}
+      key="1"
+      width={38}
+      x={39}
+      y={360}
+    />
+    <Bar
+      color="color-chart-2"
+      height={60}
+      key="2"
+      width={38}
+      x={77}
+      y={340}
+    />
+    <Bar
+      color="color-chart-3"
+      height={100}
+      key="3"
+      width={38}
+      x={115}
+      y={300}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={100}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            1,
+          ],
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            0,
+            3,
+          ],
+          Array [
+            0,
+            5,
+          ],
+        ]
+      }
+      seriesIndex={0}
+      width={152}
+      x={1}
+      xField="x"
+      xFormatter={[Function]}
+      y={300}
+    />
+  </g>
+  <g
+    key="1"
+  >
+    <Bar
+      color="color-chart-0"
+      height={40}
+      key="0"
+      width={38}
+      x={170}
+      y={360}
+    />
+    <Bar
+      color="color-chart-1"
+      height={60}
+      key="1"
+      width={38}
+      x={208}
+      y={340}
+    />
+    <Bar
+      color="color-chart-2"
+      height={80}
+      key="2"
+      width={38}
+      x={246}
+      y={320}
+    />
+    <Bar
+      color="color-chart-3"
+      height={120}
+      key="3"
+      width={38}
+      x={284}
+      y={280}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={120}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            0,
+            3,
+          ],
+          Array [
+            0,
+            4,
+          ],
+          Array [
+            0,
+            6,
+          ],
+        ]
+      }
+      seriesIndex={1}
+      width={152}
+      x={170}
+      xField="x"
+      xFormatter={[Function]}
+      y={280}
+    />
+  </g>
+  <g
+    key="2"
+  >
+    <Bar
+      color="color-chart-0"
+      height={40}
+      key="0"
+      width={38}
+      x={339}
+      y={360}
+    />
+    <Bar
+      color="color-chart-1"
+      height={80}
+      key="1"
+      width={38}
+      x={377}
+      y={320}
+    />
+    <Bar
+      color="color-chart-2"
+      height={100}
+      key="2"
+      width={38}
+      x={415}
+      y={300}
+    />
+    <Bar
+      color="color-chart-3"
+      height={120}
+      key="3"
+      width={38}
+      x={453}
+      y={280}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={120}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            0,
+            4,
+          ],
+          Array [
+            0,
+            5,
+          ],
+          Array [
+            0,
+            6,
+          ],
+        ]
+      }
+      seriesIndex={2}
+      width={152}
+      x={339}
+      xField="x"
+      xFormatter={[Function]}
+      y={280}
+    />
+  </g>
+  <g
+    key="3"
+  >
+    <Bar
+      color="color-chart-0"
+      height={60}
+      key="0"
+      width={38}
+      x={508}
+      y={340}
+    />
+    <Bar
+      color="color-chart-1"
+      height={120}
+      key="1"
+      width={38}
+      x={546}
+      y={280}
+    />
+    <Bar
+      color="color-chart-2"
+      height={140}
+      key="2"
+      width={38}
+      x={584}
+      y={260}
+    />
+    <Bar
+      color="color-chart-3"
+      height={140}
+      key="3"
+      width={38}
+      x={622}
+      y={260}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={140}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            3,
+          ],
+          Array [
+            0,
+            6,
+          ],
+          Array [
+            0,
+            7,
+          ],
+          Array [
+            0,
+            7,
+          ],
+        ]
+      }
+      seriesIndex={3}
+      width={152}
+      x={508}
+      xField="x"
+      xFormatter={[Function]}
+      y={260}
+    />
+  </g>
+  <g
+    key="4"
+  >
+    <Bar
+      color="color-chart-0"
+      height={80}
+      key="0"
+      width={38}
+      x={677}
+      y={320}
+    />
+    <Bar
+      color="color-chart-1"
+      height={160}
+      key="1"
+      width={38}
+      x={715}
+      y={240}
+    />
+    <Bar
+      color="color-chart-2"
+      height={180}
+      key="2"
+      width={38}
+      x={753}
+      y={220}
+    />
+    <Bar
+      color="color-chart-3"
+      height={160}
+      key="3"
+      width={38}
+      x={791}
+      y={240}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={180}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            4,
+          ],
+          Array [
+            0,
+            8,
+          ],
+          Array [
+            0,
+            9,
+          ],
+          Array [
+            0,
+            8,
+          ],
+        ]
+      }
+      seriesIndex={4}
+      width={152}
+      x={677}
+      xField="x"
+      xFormatter={[Function]}
+      y={220}
+    />
+  </g>
+  <g
+    key="5"
+  >
+    <Bar
+      color="color-chart-0"
+      height={400}
+      key="0"
+      width={38}
+      x={846}
+      y={0}
+    />
+    <Bar
+      color="color-chart-1"
+      height={160}
+      key="1"
+      width={38}
+      x={884}
+      y={240}
+    />
+    <Bar
+      color="color-chart-2"
+      height={180}
+      key="2"
+      width={38}
+      x={922}
+      y={220}
+    />
+    <Bar
+      color="color-chart-3"
+      height={20}
+      key="3"
+      width={38}
+      x={960}
+      y={380}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={400}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            20,
+          ],
+          Array [
+            0,
+            8,
+          ],
+          Array [
+            0,
+            9,
+          ],
+          Array [
+            0,
+            1,
+          ],
+        ]
+      }
+      seriesIndex={5}
+      width={152}
+      x={846}
+      xField="x"
+      xFormatter={[Function]}
+      y={0}
+    />
+  </g>
+</g>
+`;
+
+exports[`Bars [common] example testing should match snapshot(s) for basic 2`] = `
+<g
+  className="lucid-Bars"
+>
+  <g
+    key="0"
+  >
+    <Bar
+      color="color-chart-0"
+      height={10.5263157894737}
+      key="0"
+      width={152}
+      x={1}
+      y={389.4736842105263}
+    />
+    <Bar
+      color="color-chart-1"
+      height={21.05263157894734}
+      key="1"
+      width={152}
+      x={1}
+      y={368.42105263157896}
+    />
+    <Bar
+      color="color-chart-2"
+      height={31.57894736842104}
+      key="2"
+      width={152}
+      x={1}
+      y={336.8421052631579}
+    />
+    <Bar
+      color="color-chart-3"
+      height={52.63157894736844}
+      key="3"
+      width={152}
+      x={1}
+      y={284.2105263157895}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={115.78947368421052}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            1,
+          ],
+          Array [
+            1,
+            3,
+          ],
+          Array [
+            3,
+            6,
+          ],
+          Array [
+            6,
+            11,
+          ],
+        ]
+      }
+      seriesIndex={0}
+      width={152}
+      x={1}
+      xField="x"
+      xFormatter={[Function]}
+      y={284.2105263157895}
+    />
+  </g>
+  <g
+    key="1"
+  >
+    <Bar
+      color="color-chart-0"
+      height={21.05263157894734}
+      key="0"
+      width={152}
+      x={170}
+      y={378.94736842105266}
+    />
+    <Bar
+      color="color-chart-1"
+      height={31.578947368421098}
+      key="1"
+      width={152}
+      x={170}
+      y={347.36842105263156}
+    />
+    <Bar
+      color="color-chart-2"
+      height={42.10526315789468}
+      key="2"
+      width={152}
+      x={170}
+      y={305.2631578947369}
+    />
+    <Bar
+      color="color-chart-3"
+      height={63.15789473684214}
+      key="3"
+      width={152}
+      x={170}
+      y={242.10526315789474}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={157.89473684210526}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            2,
+            5,
+          ],
+          Array [
+            5,
+            9,
+          ],
+          Array [
+            9,
+            15,
+          ],
+        ]
+      }
+      seriesIndex={1}
+      width={152}
+      x={170}
+      xField="x"
+      xFormatter={[Function]}
+      y={242.10526315789474}
+    />
+  </g>
+  <g
+    key="2"
+  >
+    <Bar
+      color="color-chart-0"
+      height={21.05263157894734}
+      key="0"
+      width={152}
+      x={339}
+      y={378.94736842105266}
+    />
+    <Bar
+      color="color-chart-1"
+      height={42.10526315789474}
+      key="1"
+      width={152}
+      x={339}
+      y={336.8421052631579}
+    />
+    <Bar
+      color="color-chart-2"
+      height={52.63157894736844}
+      key="2"
+      width={152}
+      x={339}
+      y={284.2105263157895}
+    />
+    <Bar
+      color="color-chart-3"
+      height={63.15789473684211}
+      key="3"
+      width={152}
+      x={339}
+      y={221.05263157894737}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={178.94736842105263}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            2,
+            6,
+          ],
+          Array [
+            6,
+            11,
+          ],
+          Array [
+            11,
+            17,
+          ],
+        ]
+      }
+      seriesIndex={2}
+      width={152}
+      x={339}
+      xField="x"
+      xFormatter={[Function]}
+      y={221.05263157894737}
+    />
+  </g>
+  <g
+    key="3"
+  >
+    <Bar
+      color="color-chart-0"
+      height={31.57894736842104}
+      key="0"
+      width={152}
+      x={508}
+      y={368.42105263157896}
+    />
+    <Bar
+      color="color-chart-1"
+      height={63.15789473684208}
+      key="1"
+      width={152}
+      x={508}
+      y={305.2631578947369}
+    />
+    <Bar
+      color="color-chart-2"
+      height={73.68421052631581}
+      key="2"
+      width={152}
+      x={508}
+      y={231.57894736842107}
+    />
+    <Bar
+      color="color-chart-3"
+      height={73.68421052631581}
+      key="3"
+      width={152}
+      x={508}
+      y={157.89473684210526}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={242.10526315789474}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            3,
+          ],
+          Array [
+            3,
+            9,
+          ],
+          Array [
+            9,
+            16,
+          ],
+          Array [
+            16,
+            23,
+          ],
+        ]
+      }
+      seriesIndex={3}
+      width={152}
+      x={508}
+      xField="x"
+      xFormatter={[Function]}
+      y={157.89473684210526}
+    />
+  </g>
+  <g
+    key="4"
+  >
+    <Bar
+      color="color-chart-0"
+      height={42.10526315789474}
+      key="0"
+      width={152}
+      x={677}
+      y={357.89473684210526}
+    />
+    <Bar
+      color="color-chart-1"
+      height={84.21052631578948}
+      key="1"
+      width={152}
+      x={677}
+      y={273.6842105263158}
+    />
+    <Bar
+      color="color-chart-2"
+      height={94.73684210526318}
+      key="2"
+      width={152}
+      x={677}
+      y={178.9473684210526}
+    />
+    <Bar
+      color="color-chart-3"
+      height={84.21052631578948}
+      key="3"
+      width={152}
+      x={677}
+      y={94.73684210526312}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={305.2631578947369}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            4,
+          ],
+          Array [
+            4,
+            12,
+          ],
+          Array [
+            12,
+            21,
+          ],
+          Array [
+            21,
+            29,
+          ],
+        ]
+      }
+      seriesIndex={4}
+      width={152}
+      x={677}
+      xField="x"
+      xFormatter={[Function]}
+      y={94.73684210526312}
+    />
+  </g>
+  <g
+    key="5"
+  >
+    <Bar
+      color="color-chart-0"
+      height={210.52631578947367}
+      key="0"
+      width={152}
+      x={846}
+      y={189.47368421052633}
+    />
+    <Bar
+      color="color-chart-1"
+      height={84.21052631578945}
+      key="1"
+      width={152}
+      x={846}
+      y={105.26315789473688}
+    />
+    <Bar
+      color="color-chart-2"
+      height={94.73684210526318}
+      key="2"
+      width={152}
+      x={846}
+      y={10.5263157894737}
+    />
+    <Bar
+      color="color-chart-3"
+      height={10.5263157894737}
+      key="3"
+      width={152}
+      x={846}
+      y={0}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={400}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            20,
+          ],
+          Array [
+            20,
+            28,
+          ],
+          Array [
+            28,
+            37,
+          ],
+          Array [
+            37,
+            38,
+          ],
+        ]
+      }
+      seriesIndex={5}
+      width={152}
+      x={846}
+      xField="x"
+      xFormatter={[Function]}
+      y={0}
+    />
+  </g>
+</g>
+`;
+
+exports[`Bars [common] example testing should match snapshot(s) for custom-colors 1`] = `
+<g
+  className="lucid-Bars"
+>
+  <g
+    key="0"
+  >
+    <Bar
+      color="color-chart-good"
+      height={20}
+      key="0"
+      width={38}
+      x={1}
+      y={380}
+    />
+    <Bar
+      color="color-chart-1"
+      height={40}
+      key="1"
+      width={38}
+      x={39}
+      y={360}
+    />
+    <Bar
+      color="color-chart-bad"
+      height={60}
+      key="2"
+      width={38}
+      x={77}
+      y={340}
+    />
+    <Bar
+      color="color-chart-3"
+      height={100}
+      key="3"
+      width={38}
+      x={115}
+      y={300}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={100}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            1,
+          ],
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            0,
+            3,
+          ],
+          Array [
+            0,
+            5,
+          ],
+        ]
+      }
+      seriesIndex={0}
+      width={152}
+      x={1}
+      xField="x"
+      xFormatter={[Function]}
+      y={300}
+    />
+  </g>
+  <g
+    key="1"
+  >
+    <Bar
+      color="color-chart-good"
+      height={40}
+      key="0"
+      width={38}
+      x={170}
+      y={360}
+    />
+    <Bar
+      color="color-chart-1"
+      height={60}
+      key="1"
+      width={38}
+      x={208}
+      y={340}
+    />
+    <Bar
+      color="color-chart-bad"
+      height={80}
+      key="2"
+      width={38}
+      x={246}
+      y={320}
+    />
+    <Bar
+      color="color-chart-3"
+      height={120}
+      key="3"
+      width={38}
+      x={284}
+      y={280}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={120}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            0,
+            3,
+          ],
+          Array [
+            0,
+            4,
+          ],
+          Array [
+            0,
+            6,
+          ],
+        ]
+      }
+      seriesIndex={1}
+      width={152}
+      x={170}
+      xField="x"
+      xFormatter={[Function]}
+      y={280}
+    />
+  </g>
+  <g
+    key="2"
+  >
+    <Bar
+      color="color-chart-good"
+      height={40}
+      key="0"
+      width={38}
+      x={339}
+      y={360}
+    />
+    <Bar
+      color="color-chart-1"
+      height={80}
+      key="1"
+      width={38}
+      x={377}
+      y={320}
+    />
+    <Bar
+      color="color-chart-bad"
+      height={100}
+      key="2"
+      width={38}
+      x={415}
+      y={300}
+    />
+    <Bar
+      color="color-chart-3"
+      height={120}
+      key="3"
+      width={38}
+      x={453}
+      y={280}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={120}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            2,
+          ],
+          Array [
+            0,
+            4,
+          ],
+          Array [
+            0,
+            5,
+          ],
+          Array [
+            0,
+            6,
+          ],
+        ]
+      }
+      seriesIndex={2}
+      width={152}
+      x={339}
+      xField="x"
+      xFormatter={[Function]}
+      y={280}
+    />
+  </g>
+  <g
+    key="3"
+  >
+    <Bar
+      color="color-chart-good"
+      height={60}
+      key="0"
+      width={38}
+      x={508}
+      y={340}
+    />
+    <Bar
+      color="color-chart-1"
+      height={120}
+      key="1"
+      width={38}
+      x={546}
+      y={280}
+    />
+    <Bar
+      color="color-chart-bad"
+      height={140}
+      key="2"
+      width={38}
+      x={584}
+      y={260}
+    />
+    <Bar
+      color="color-chart-3"
+      height={140}
+      key="3"
+      width={38}
+      x={622}
+      y={260}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={140}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            3,
+          ],
+          Array [
+            0,
+            6,
+          ],
+          Array [
+            0,
+            7,
+          ],
+          Array [
+            0,
+            7,
+          ],
+        ]
+      }
+      seriesIndex={3}
+      width={152}
+      x={508}
+      xField="x"
+      xFormatter={[Function]}
+      y={260}
+    />
+  </g>
+  <g
+    key="4"
+  >
+    <Bar
+      color="color-chart-good"
+      height={80}
+      key="0"
+      width={38}
+      x={677}
+      y={320}
+    />
+    <Bar
+      color="color-chart-1"
+      height={160}
+      key="1"
+      width={38}
+      x={715}
+      y={240}
+    />
+    <Bar
+      color="color-chart-bad"
+      height={180}
+      key="2"
+      width={38}
+      x={753}
+      y={220}
+    />
+    <Bar
+      color="color-chart-3"
+      height={160}
+      key="3"
+      width={38}
+      x={791}
+      y={240}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={180}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            4,
+          ],
+          Array [
+            0,
+            8,
+          ],
+          Array [
+            0,
+            9,
+          ],
+          Array [
+            0,
+            8,
+          ],
+        ]
+      }
+      seriesIndex={4}
+      width={152}
+      x={677}
+      xField="x"
+      xFormatter={[Function]}
+      y={220}
+    />
+  </g>
+  <g
+    key="5"
+  >
+    <Bar
+      color="color-chart-good"
+      height={400}
+      key="0"
+      width={38}
+      x={846}
+      y={0}
+    />
+    <Bar
+      color="color-chart-1"
+      height={160}
+      key="1"
+      width={38}
+      x={884}
+      y={240}
+    />
+    <Bar
+      color="color-chart-bad"
+      height={180}
+      key="2"
+      width={38}
+      x={922}
+      y={220}
+    />
+    <Bar
+      color="color-chart-3"
+      height={20}
+      key="3"
+      width={38}
+      x={960}
+      y={380}
+    />
+    <Component
+      data={
+        Array [
+          Object {
+            "x": "one",
+            "y0": 1,
+            "y1": 2,
+            "y2": 3,
+            "y3": 5,
+          },
+          Object {
+            "x": "two",
+            "y0": 2,
+            "y1": 3,
+            "y2": 4,
+            "y3": 6,
+          },
+          Object {
+            "x": "three",
+            "y0": 2,
+            "y1": 4,
+            "y2": 5,
+            "y3": 6,
+          },
+          Object {
+            "x": "four",
+            "y0": 3,
+            "y1": 6,
+            "y2": 7,
+            "y3": 7,
+          },
+          Object {
+            "x": "five",
+            "y0": 4,
+            "y1": 8,
+            "y2": 9,
+            "y3": 8,
+          },
+          Object {
+            "x": "six",
+            "y0": 20,
+            "y1": 8,
+            "y2": 9,
+            "y3": 1,
+          },
+        ]
+      }
+      height={400}
+      isExpanded={false}
+      onMouseEnter={[Function]}
+      onMouseOut={[Function]}
+      renderBody={[Function]}
+      series={
+        Array [
+          Array [
+            0,
+            20,
+          ],
+          Array [
+            0,
+            8,
+          ],
+          Array [
+            0,
+            9,
+          ],
+          Array [
+            0,
+            1,
+          ],
+        ]
+      }
+      seriesIndex={5}
+      width={152}
+      x={846}
+      xField="x"
+      xFormatter={[Function]}
+      y={0}
+    />
+  </g>
+</g>
+`;
