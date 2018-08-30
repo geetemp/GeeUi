@@ -2,13 +2,18 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import _ from 'lodash';
 import * as path from 'path';
+// 把markdown转成react virtual dom
 import marksy from 'marksy/components';
 import { storiesOf } from '@storybook/react';
+// 用来在stories之间相互跳转
 import LinkTo from '@storybook/addon-links/react';
+// 在运行时中配置story的UI
 import { setOptions } from '@storybook/addon-options';
+// custom story UI
 import { exampleStory } from '../.storybook/geeid-docs-addon';
 import readmeText from '!!raw-loader!../README.md';
 import introText from '!!raw-loader!./intro.md';
+// markdown中jsx语法高亮
 import SyntaxHighlighter, {
 	registerLanguage,
 } from 'react-syntax-highlighter/prism-light';
@@ -33,6 +38,7 @@ const getDefaultExport = module => {
 	return module;
 };
 
+// 判断组件是否私有
 const isPrivate = component =>
 	component._isPrivate || (component.peek && component.peek.isPrivate);
 
@@ -43,6 +49,7 @@ const getExamplesFromContext = (reqExamples, rawContext) =>
 		source: raw,
 	}));
 
+// ‘扎勾’svg图片
 const checkIconSVG = `<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg>
 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" style="fill: rgb(42, 187, 176)">
@@ -50,6 +57,7 @@ const checkIconSVG = `<?xml version="1.0" encoding="utf-8"?>
 </svg>
 `;
 
+// 重写markdown中a,ul,li的样式
 const styles = {
 	link: {
 		color: '#2abbb0',
@@ -119,6 +127,36 @@ class ArticlePage extends React.Component {
 		);
 	}
 }
+
+storiesOf('Lucid UI', module)
+	.add('Introduction', () => (
+		<ArticlePage>
+			<div
+				style={{
+					display: 'flex',
+					justifyContent: 'center',
+				}}
+			>
+				<LucidLogo />
+			</div>
+			{compile(introText).tree}
+		</ArticlePage>
+	))
+	.add('Readme', () => <ArticlePage>{compile(readmeText).tree}</ArticlePage>)
+	.add('Child Components', () => (
+		<ArticlePage>{compile(childComponentsText).tree}</ArticlePage>
+	))
+	.add('Hybrid State Components', () => (
+		<ArticlePage>{compile(hybridComponentsText).tree}</ArticlePage>
+	))
+	.add('Computed Props', () => (
+		<ArticlePage>{compile(computedPropsText).tree}</ArticlePage>
+	))
+	.add('Color Palette', () => (
+		<ArticlePage>
+			<ColorPalette />
+		</ArticlePage>
+	));
 
 storiesOf('gee UI', module)
 	.add('Introduction', () => (

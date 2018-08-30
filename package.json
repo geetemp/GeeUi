@@ -1,12 +1,12 @@
 {
-	"name": "lucid-ui",
+	"name": "gee-ui",
 	"version": "2.36.1",
-	"description": "A UI component library from AppNexus.",
+	"description": "A UI component library from geetemp.",
 	"main": "dist/index.js",
 	"module": "lib/index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/appnexus/lucid.git"
+		"url": ""
 	},
 	"scripts": {
 		"build": "npm run build-js && npm run build-modules",
@@ -16,8 +16,6 @@
 		"build-modules": "set NODE_ENV=production BABEL_ENV=modules babel --extensions .js,.jsx --ignore spec.js,docs,examples,test-entry.js,coverage ./src --out-dir ./lib",
 		"cover": "npm run jest -- --coverage",
 		"create-component": "scripts/create-component.sh",
-		"dev": "npm run storybook",
-		"docs": "set NODE_ENV=documentation && start-storybook -s ./docs/public -p 6006",
 		"jest": "NODE_ENV=test TZ=UTC jest --runInBand",
 		"lint": "eslint ./src --ext .js,.jsx",
 		"lint-fix": "eslint ./src --ext .js,.jsx --fix",
@@ -29,6 +27,8 @@
 		"preversion": "rm -rf dist && npm run lint && npm run build-js && npm run build-bundle &&  npm run path-import-modules-generate",
 		"release": "np",
 		"start": "npm run docs",
+		"docs": "set NODE_ENV=documentation && start-storybook -s ./docs/public -p 6006",
+		"dev": "npm run storybook",
 		"storybook": "start-storybook -p 6006",
 		"stylelint": "stylelint 'src/**/*.less' --config .stylelintrc",
 		"test": "npm run lint && npm run cover",
@@ -44,7 +44,7 @@
 		"stateful",
 		"stateless"
 	],
-	"author": "AppNexus engineering",
+	"author": "geetemp engineering",
 	"license": "Apache-2.0",
 	"dependencies": {
 		"classnames": "^2.2.3",
