@@ -128,36 +128,6 @@ class ArticlePage extends React.Component {
 	}
 }
 
-storiesOf('Lucid UI', module)
-	.add('Introduction', () => (
-		<ArticlePage>
-			<div
-				style={{
-					display: 'flex',
-					justifyContent: 'center',
-				}}
-			>
-				<LucidLogo />
-			</div>
-			{compile(introText).tree}
-		</ArticlePage>
-	))
-	.add('Readme', () => <ArticlePage>{compile(readmeText).tree}</ArticlePage>)
-	.add('Child Components', () => (
-		<ArticlePage>{compile(childComponentsText).tree}</ArticlePage>
-	))
-	.add('Hybrid State Components', () => (
-		<ArticlePage>{compile(hybridComponentsText).tree}</ArticlePage>
-	))
-	.add('Computed Props', () => (
-		<ArticlePage>{compile(computedPropsText).tree}</ArticlePage>
-	))
-	.add('Color Palette', () => (
-		<ArticlePage>
-			<ColorPalette />
-		</ArticlePage>
-	));
-
 storiesOf('gee UI', module)
 	.add('Introduction', () => (
 		<ArticlePage>{compile(introText).tree}</ArticlePage>
@@ -166,16 +136,22 @@ storiesOf('gee UI', module)
 
 const loadedComponents = require('./load-components');
 
+//过滤掉私有组件
 const filteredComponents = _.reject(loadedComponents, ({ component }) =>
 	isPrivate(component)
 );
+
+// 一级组件分组
 const groupedComponents = _.groupBy(filteredComponents, ({ component }) =>
 	_.get(component, 'peek.categories[0]', 'misc')
 );
+
 _.reduce(groupedComponents, (storyKind, componentGroup, category) => {
+	// 二级组件分组
 	const subGroupedComponents = _.groupBy(componentGroup, ({ component }) =>
 		_.get(component, 'peek.categories[1]', 'misc')
 	);
+
 	return storyKind.add(_.capitalize(category), () => (
 		<ArticlePage>
 			<h1>{_.capitalize(category)}</h1>
@@ -234,6 +210,7 @@ _.reduce(groupedComponents, (storyKind, componentGroup, category) => {
 
 const storiesOfAddSequence = [];
 
+// 组件stories
 _.forEach(
 	filteredComponents,
 	({ name: componentName, component, examplesContext, examplesContextRaw }) => {
