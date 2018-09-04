@@ -12,7 +12,8 @@
 	position: relative;
 	background-size: 100%;
 	background-image: linear-gradient(@start, @end);
-	transition: opacity @timing-animation-hover, box-shadow (@timing-animation-hover / 2);
+	transition: opacity @timing-animation-hover,
+		box-shadow (@timing-animation-hover / 2);
 	z-index: 0;
 
 	&::before {
@@ -25,7 +26,8 @@
 		background-image: linear-gradient(@end, @start);
 		box-shadow: none;
 		opacity: 0;
-		transition: opacity @timing-animation-hover, box-shadow (@timing-animation-hover / 2);
+		transition: opacity @timing-animation-hover,
+			box-shadow (@timing-animation-hover / 2);
 		z-index: -1;
 		content: '';
 	}
@@ -95,7 +97,7 @@
 }
 
 // Defines a standard 30% opacity
-.opacity(@opacity: .30) {
+.opacity(@opacity: 0.3) {
 	opacity: @opacity;
 }
 
@@ -132,7 +134,12 @@
 // * `@background` *@color-white* defines the remainder fill color-primary
 // * `@height` *3px* defines the thickness of the "border"
 .hardstop-gradient(@direction: to bottom, @line: @color-primary, @background: @color-white, @height: 3px) {
-	background-image: linear-gradient(@direction, @line 0, @line @height, @background @height);
+	background-image: linear-gradient(
+		@direction,
+		@line 0,
+		@line @height,
+		@background @height
+	);
 }
 
 // Create an element which displays the properties of a selectable UI component
@@ -217,4 +224,3 @@
 		color: @color-linkColorHover;
 	}
 }
-
