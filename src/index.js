@@ -1,4 +1,3 @@
-import Button from './components/Button/Button';
-import Underline from './components/Underline/Underline';
+import Button from './components/Button';
 
-export { Button, Underline };
+export { Button };

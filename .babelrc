@@ -3,6 +3,7 @@
 		"test": {
 			"plugins": [
 				["transform-object-rest-spread"],
+				"transform-class-properties",
 				["babel-plugin-transform-require-ignore", {
 					"extensions": [".less", ".css"]
 				}]
@@ -19,6 +20,7 @@
 		"development": {
 			"plugins": [
 				["transform-object-rest-spread"],
+				"transform-class-properties",
 				"lodash"
 			],
 			"presets": [
@@ -33,6 +35,7 @@
 		"documentation": {
 			"plugins": [
 				["transform-object-rest-spread"],
+				"transform-class-properties",
 				"lodash"
 			],
 			"presets": [
@@ -47,6 +50,7 @@
 		"production": {
 			"plugins": [
 				["transform-object-rest-spread"],
+				"transform-class-properties",
 				["babel-plugin-transform-require-ignore", {
 					"extensions": [".less", ".css"]
 				}],
@@ -67,6 +71,7 @@
 		"modules": {
 			"plugins": [
 				["transform-object-rest-spread"],
+				"transform-class-properties",
 				["babel-plugin-transform-require-ignore", {
 					"extensions": [".less", ".css"]
 				}],
