@@ -1,58 +1,34 @@
-import React from 'react';
-import createClass from 'create-react-class';
-import { Button } from '../../../index';
+import React, { Component } from "react";
+import "../style";
+import Button from "../index";
 
 const sectionStyle = {
-	display: 'flex',
-	flexDirection: 'column',
+	display: "flex",
+	flexDirection: "column"
 };
 
 const articleStyle = {
-	display: 'flex',
-	margin: '5px 0px',
+	display: "flex",
+	margin: "5px 0px"
 };
 
 const buttonStyle = {
-	marginRight: '5px',
+	marginRight: "5px"
 };
 
-export default createClass({
+export default class extends Component {
 	render() {
 		return (
 			<section style={sectionStyle}>
 				<article style={articleStyle}>
-					<Button style={buttonStyle} kind="danger">
-						Danger
+					<Button style={buttonStyle} type="danger">
+						danger
 					</Button>
-					<Button kind="danger" isDisabled={true}>
-						Disabled
-					</Button>
-				</article>
-				<article style={articleStyle}>
-					<Button style={buttonStyle} kind="danger" size="short">
-						Short
-					</Button>
-					<Button kind="danger" size="short" isDisabled={true}>
-						Short disabled
-					</Button>
-				</article>
-				<article style={articleStyle}>
-					<Button style={buttonStyle} kind="danger" size="small">
-						Small
-					</Button>
-					<Button kind="danger" size="small" isDisabled={true}>
-						Small disabled
-					</Button>
-				</article>
-				<article style={articleStyle}>
-					<Button style={buttonStyle} kind="danger" size="large">
-						Large
-					</Button>
-					<Button kind="danger" size="large" isDisabled={true}>
-						Large disabled
+					<Button type="danger" disabled={true}>
+						danger disabled
 					</Button>
 				</article>
 			</section>
 		);
-	},
-});
+	}
+}

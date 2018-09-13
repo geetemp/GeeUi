@@ -1,8 +1,10 @@
 import React from "react";
-const AntButton = require("antd/lib/Button");
+const AntButton = require("antd/lib/button");
 
-export class Button extends React.Component {
+export default class Button extends React.Component {
 	render() {
-		<AntButton {...this.props} />;
+		const props = { type: "dashed", ...this.props };
+		console.log(this.props);
+		return <AntButton {...props} />;
 	}
 }

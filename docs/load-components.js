@@ -7,17 +7,17 @@ const getDefaultExport = module => {
 
 module.exports = [
 	{
-		name: 'Button',
-		component: getDefaultExport(require('../src/components/Button/Button')),
+		name: "Button",
+		component: getDefaultExport(require("../src/components/button")),
 		examplesContext: require.context(
-			'../src/components/Button/examples',
+			"../src/components/button/examples",
 			true,
 			/\.jsx?$/
 		),
 		examplesContextRaw: require.context(
-			'!!raw-loader!../src/components/Button/examples',
+			"!!raw-loader!../src/components/button/examples",
 			true,
 			/\.jsx?$/
-		),
-	},
+		)
+	}
 ];

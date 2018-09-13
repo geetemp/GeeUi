@@ -9,10 +9,9 @@
     "url": ""
   },
   "scripts": {
-    "build": "taskr",
+    "dev": "taskr",
+    "build": "taskr release",
     "build-bundle": "scripts/build-bundle.sh",
-    "build-js": "cross-env NODE_ENV=production babel --watch --extensions .js,.jsx --ignore spec.js,docs,examples,test-entry.js,coverage ./src --out-dir ./dist",
-    "build-modules": "cross-env NODE_ENV=production BABEL_ENV=modules babel --extensions .js,.jsx --ignore spec.js,docs,examples,test-entry.js,coverage ./src --out-dir ./lib",
     "start": "npm run docs",
     "docs": "cross-env NODE_ENV=documentation start-storybook -s ./docs/public -p 6006",
     "stylelint": "stylelint 'src/**/*.less' --config .stylelintrc",
@@ -50,6 +49,7 @@
     "@storybook/react": "^3.3.12",
     "@taskr/babel": "^1.1.0",
     "@taskr/less": "^1.1.0",
+    "@taskr/watch": "^1.1.0",
     "autoprefixer": "^8.2.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",

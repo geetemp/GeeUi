@@ -1,33 +1,33 @@
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import _ from 'lodash';
-import * as path from 'path';
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import _ from "lodash";
+import * as path from "path";
 // 把markdown转成react virtual dom
-import marksy from 'marksy/components';
-import { storiesOf } from '@storybook/react';
+import marksy from "marksy/components";
+import { storiesOf } from "@storybook/react";
 // 用来在stories之间相互跳转
-import LinkTo from '@storybook/addon-links/react';
+import LinkTo from "@storybook/addon-links/react";
 // 在运行时中配置story的UI
-import { setOptions } from '@storybook/addon-options';
+import { setOptions } from "@storybook/addon-options";
 // custom story UI
-import { exampleStory } from '../.storybook/geeid-docs-addon';
-import readmeText from '!!raw-loader!../README.md';
-import introText from '!!raw-loader!./intro.md';
+import { exampleStory } from "../.storybook/geeid-docs-addon";
+import readmeText from "!!raw-loader!../README.md";
+import introText from "!!raw-loader!./intro.md";
 // markdown中jsx语法高亮
 import SyntaxHighlighter, {
-	registerLanguage,
-} from 'react-syntax-highlighter/prism-light';
-import jsx from 'react-syntax-highlighter/languages/prism/jsx';
-import okaidia from 'react-syntax-highlighter/styles/prism/okaidia';
-import '../src/index.less';
+	registerLanguage
+} from "react-syntax-highlighter/prism-light";
+import jsx from "react-syntax-highlighter/languages/prism/jsx";
+import okaidia from "react-syntax-highlighter/styles/prism/okaidia";
+import "../src/index.less";
 
-registerLanguage('jsx', jsx);
+registerLanguage("jsx", jsx);
 
 const loadAllKeys = (reqContext, rawContext) => {
-	return _.map(_.get(reqContext, 'keys', _.constant([]))(), key => ({
+	return _.map(_.get(reqContext, "keys", _.constant([]))(), key => ({
 		key,
 		module: reqContext(key),
-		raw: rawContext(key),
+		raw: rawContext(key)
 	}));
 };
 
@@ -44,9 +44,9 @@ const isPrivate = component =>
 
 const getExamplesFromContext = (reqExamples, rawContext) =>
 	_.map(loadAllKeys(reqExamples, rawContext), ({ key, module, raw }) => ({
-		name: _.join(_.reject(_.words(key), w => /^(\d+)|jsx?$/.test(w)), ' '),
+		name: _.join(_.reject(_.words(key), w => /^(\d+)|jsx?$/.test(w)), " "),
 		Example: getDefaultExport(module),
-		source: raw,
+		source: raw
 	}));
 
 // ‘扎勾’svg图片
@@ -60,37 +60,37 @@ const checkIconSVG = `<?xml version="1.0" encoding="utf-8"?>
 // 重写markdown中a,ul,li的样式
 const styles = {
 	link: {
-		color: '#2abbb0',
-		textDecoration: 'underline',
-		cursor: 'pointer',
-		outline: 'none',
+		color: "#2abbb0",
+		textDecoration: "underline",
+		cursor: "pointer",
+		outline: "none"
 	},
 	ul: {
 		listStyleImage: `url('data:image/svg+xml;base64,${window.btoa(
 			checkIconSVG
-		)}')`,
+		)}')`
 	},
 	li: {
-		margin: '8px 0',
-	},
+		margin: "8px 0"
+	}
 };
 
 const compile = marksy({
 	createElement: React.createElement,
 	highlight: (language, code) =>
 		ReactDOMServer.renderToStaticMarkup(
-			<SyntaxHighlighter language={language || 'jsx'} style={okaidia}>
+			<SyntaxHighlighter language={language || "jsx"} style={okaidia}>
 				{code}
 			</SyntaxHighlighter>
 		),
 	elements: {
 		a: props => <a {...props} style={styles.link} />,
 		ul: props => <ul {...props} style={styles.ul} />,
-		li: props => <li {...props} style={styles.li} />,
+		li: props => <li {...props} style={styles.li} />
 	},
 	components: {
-		LinkTo: props => <LinkTo {...props} style={styles.link} />,
-	},
+		LinkTo: props => <LinkTo {...props} style={styles.link} />
+	}
 });
 
 class ArticlePage extends React.Component {
@@ -99,12 +99,12 @@ class ArticlePage extends React.Component {
 	}
 
 	componentDidMount() {
-		if (typeof window !== 'undefined') {
+		if (typeof window !== "undefined") {
 			window.document.documentElement.scrollTop = 0;
 		}
 
 		setOptions({
-			showAddonPanel: false,
+			showAddonPanel: false
 		});
 	}
 
@@ -112,10 +112,10 @@ class ArticlePage extends React.Component {
 		const { children } = this.props;
 
 		return (
-			<article style={{ width: '100%', height: '100%' }}>
+			<article style={{ width: "100%", height: "100%" }}>
 				<a href="https://github.com/geetemp">
 					<img
-						style={{ position: 'absolute', top: 0, right: 0, border: 0 }}
+						style={{ position: "absolute", top: 0, right: 0, border: 0 }}
 						src="//camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
 						srcSet="//aral.github.io/fork-me-on-github-retina-ribbons/right-graphite@2x.png 2x"
 						alt="Fork me on GitHub"
@@ -128,13 +128,13 @@ class ArticlePage extends React.Component {
 	}
 }
 
-storiesOf('gee UI', module)
-	.add('Introduction', () => (
+storiesOf("gee UI", module)
+	.add("Introduction", () => (
 		<ArticlePage>{compile(introText).tree}</ArticlePage>
 	))
-	.add('Readme', () => <ArticlePage>{compile(readmeText).tree}</ArticlePage>);
+	.add("Readme", () => <ArticlePage>{compile(readmeText).tree}</ArticlePage>);
 
-const loadedComponents = require('./load-components');
+const loadedComponents = require("./load-components");
 
 //过滤掉私有组件
 const filteredComponents = _.reject(loadedComponents, ({ component }) =>
@@ -143,13 +143,13 @@ const filteredComponents = _.reject(loadedComponents, ({ component }) =>
 
 // 一级组件分组
 const groupedComponents = _.groupBy(filteredComponents, ({ component }) =>
-	_.get(component, 'peek.categories[0]', 'misc')
+	_.get(component, "peek.categories[0]", "misc")
 );
 
 _.reduce(groupedComponents, (storyKind, componentGroup, category) => {
 	// 二级组件分组
 	const subGroupedComponents = _.groupBy(componentGroup, ({ component }) =>
-		_.get(component, 'peek.categories[1]', 'misc')
+		_.get(component, "peek.categories[1]", "misc")
 	);
 
 	return storyKind.add(_.capitalize(category), () => (
@@ -157,8 +157,8 @@ _.reduce(groupedComponents, (storyKind, componentGroup, category) => {
 			<h1>{_.capitalize(category)}</h1>
 			<section
 				style={{
-					display: 'flex',
-					flexWrap: 'wrap',
+					display: "flex",
+					flexWrap: "wrap"
 				}}
 			>
 				{_.map(subGroupedComponents, (componentSubGroup, subCategory) => (
@@ -167,16 +167,16 @@ _.reduce(groupedComponents, (storyKind, componentGroup, category) => {
 						style={{
 							marginRight: 10,
 							marginBottom: 10,
-							backgroundColor: 'rgb(247,247,247)',
+							backgroundColor: "rgb(247,247,247)",
 							padding: 6,
-							width: 200,
+							width: 200
 						}}
 					>
-						{subCategory !== 'misc' && (
+						{subCategory !== "misc" && (
 							<h3
 								style={{
 									marginTop: 0,
-									textAlign: 'center',
+									textAlign: "center"
 								}}
 							>
 								{_.capitalize(subCategory)}
@@ -184,15 +184,15 @@ _.reduce(groupedComponents, (storyKind, componentGroup, category) => {
 						)}
 						<section
 							style={{
-								display: 'flex',
-								flexDirection: 'column',
+								display: "flex",
+								flexDirection: "column"
 							}}
 						>
 							{_.map(componentSubGroup, ({ name }) => (
 								<div
 									key={name}
 									style={{
-										margin: 10,
+										margin: 10
 									}}
 								>
 									<LinkTo style={styles.link} kind={name}>
@@ -229,30 +229,30 @@ _.forEach(
 							code: source,
 							example: Example,
 							path: [componentName],
-							options: { showAddonPanel: true },
+							options: { showAddonPanel: true }
 						})
 					);
-				},
+				}
 			]);
 		});
 	}
 );
 
-const requireExampleDotStoriesJs = require.context(
-	'./examples',
-	true,
-	/.stories.js$/
-);
+// const requireExampleDotStoriesJs = require.context(
+// 	'./examples',
+// 	true,
+// 	/.stories.js$/
+// );
 
-requireExampleDotStoriesJs.keys().forEach(filename => {
-	const componentName = path.basename(filename, '.stories.js');
-	storiesOfAddSequence.push([
-		componentName,
-		() => {
-			requireExampleDotStoriesJs(filename);
-		},
-	]);
-});
-_.forEach(_.sortBy(storiesOfAddSequence, _.property('0')), ([, addStory]) =>
+// requireExampleDotStoriesJs.keys().forEach(filename => {
+// 	const componentName = path.basename(filename, '.stories.js');
+// 	storiesOfAddSequence.push([
+// 		componentName,
+// 		() => {
+// 			requireExampleDotStoriesJs(filename);
+// 		},
+// 	]);
+// });
+_.forEach(_.sortBy(storiesOfAddSequence, _.property("0")), ([, addStory]) =>
 	addStory()
 );
