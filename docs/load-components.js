@@ -19,5 +19,19 @@ module.exports = [
 			true,
 			/\.jsx?$/
 		)
+	},
+	{
+		name: "Modal",
+		component: getDefaultExport(require("../src/components/modal")),
+		examplesContext: require.context(
+			"../src/components/modal/examples",
+			true,
+			/\.jsx?$/
+		),
+		examplesContextRaw: require.context(
+			"!!raw-loader!../src/components/modal/examples",
+			true,
+			/\.jsx?$/
+		)
 	}
 ];
