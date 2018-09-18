@@ -282,6 +282,13 @@
     flatten "^1.0.2"
     read-pkg-up "^2.0.0"
 
+"@taskr/clear@^1.1.0":
+  version "1.1.0"
+  resolved "http://192.168.140.200:4873/@taskr%2fclear/-/clear-1.1.0.tgz#0a88d180bed2f91f310136375a72c00b50834fd1"
+  dependencies:
+    bluebird "^3.5.0"
+    rimraf "^2.5.4"
+
 "@taskr/less@^1.1.0":
   version "1.1.0"
   resolved "http://192.168.140.200:4873/@taskr%2fless/-/less-1.1.0.tgz#7786ffd16513de9e4acaea68678651d6ae08291e"
